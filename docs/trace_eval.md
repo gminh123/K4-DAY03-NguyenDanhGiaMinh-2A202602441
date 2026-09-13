@@ -14,7 +14,7 @@
 | **2. Tool Interaction** | 5 / 5 | Hệ thống bắt buộc kết nối hệ thống quản lý học vụ (SIS) để lấy GPA, CSDL lịch thi, và hệ thống lịch/calendar của cố vấn để đặt lịch hẹn — không thể xử lý chỉ bằng dữ liệu tĩnh →cần kết nối với MCP Server / Cơ sở dữ liệu bên ngoài |
 | **3. Dynamic Decision** | 4 / 5 | Nếu khung giờ cố vấn rảnh trùng lịch thi/lịch học của sinh viên, hệ thống phải tự động truy vấn lại và đề xuất khung giờ khác; nếu GPA dưới ngưỡng, hệ thống chủ động gợi ý đặt lịch tư vấn. Phạm vi khá giới hạn nên chưa đạt mức tối đa. |
 | **4. Long Horizon Goal** | 3 / 5 | Ở mức trung bình, mục tiêu (giúp sinh viên tra cứu và đặt lịch thành công) cần duy trì qua nhiều lượt trong một phiên (tra thông tin → chọn giờ → xử lý xung đột → xác nhận), nhưng không kéo dài nhiều ngày/nhiều phiên như agent quản lý dự án dài hạn. |
-| **TỔNG ĐIỂM AGENTIC FIT** | **16 / 20** | *Nếu tổng điểm > 12/20: Bài toán rất phù hợp triển khai Agentic System.* |
+| **TỔNG ĐIỂM AGENTIC FIT** | **16 / 20** | *Tổng điểm > 12/20: Bài toán rất phù hợp triển khai Agentic System.* |
 
 ---
 
