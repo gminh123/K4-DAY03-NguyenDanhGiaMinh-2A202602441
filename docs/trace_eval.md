@@ -28,12 +28,34 @@ Dán 1 đoạn trích xuất log tiêu biểu từ file `docs/trace_waterfall.js
 [
   {
     "step": 1,
-    "query": "Đặt lịch hẹn: 'Đặt lịch hẹn tư vấn cho SV2026001 vào 14:00 ngày 15/09/2026'",
+    "query": "'Đặt lịch hẹn tư vấn cho SV2026001 vào 14:00 ngày 15/09/2026",
+    "action_type": "TOOL_EXECUTION",
+    "tool_name": "academic_query",
+    "arguments": {
+      "student_id": "SV2026001"
+    },
+    "observation": {
+      "status": "SUCCESS",
+      "student_id": "SV2026001",
+      "data": {
+        "full_name": "Nguyễn Văn An",
+        "class": "AI-K4",
+        "gpa": 3.85,
+        "email": "an.nv@vinuni.edu.vn",
+        "status": "Đang học",
+        "advisor": "PGS.TS Nguyễn Văn A"
+      }
+    },
+    "latency_ms": 4262.35
+  },
+  {
+    "step": 2,
+    "query": "'Đặt lịch hẹn tư vấn cho SV2026001 vào 14:00 ngày 15/09/2026",
     "action_type": "TOOL_EXECUTION",
     "tool_name": "schedule_appointment",
     "arguments": {
-      "student_id": "SV2026001",
       "datetime_str": "14:00 15/09/2026",
+      "student_id": "SV2026001",
       "advisor_name": "PGS.TS Nguyễn Văn A"
     },
     "observation": {
@@ -44,15 +66,15 @@ Dán 1 đoạn trích xuất log tiêu biểu từ file `docs/trace_waterfall.js
       "advisor": "PGS.TS Nguyễn Văn A",
       "message": "Đặt lịch thành công cho sinh viên SV2026001 với PGS.TS Nguyễn Văn A vào lúc 14:00 15/09/2026."
     },
-    "latency_ms": 3480.24
+    "latency_ms": 4006.96
   },
   {
-    "step": 2,
-    "query": "Đặt lịch hẹn: 'Đặt lịch hẹn tư vấn cho SV2026001 vào 14:00 ngày 15/09/2026'",
+    "step": 3,
+    "query": "'Đặt lịch hẹn tư vấn cho SV2026001 vào 14:00 ngày 15/09/2026",
     "action_type": "FINAL_ANSWER",
-    "thought": "Tổng hợp kết quả từ MCP Server thành công.",
-    "output": "Đặt lịch thành công cho sinh viên SV2026001 với PGS.TS Nguyễn Văn A vào lúc 14:00 15/09/2026.",
-    "latency_ms": 10.0
+    "thought": "Gemini phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
+    "output": "Lịch hẹn tư vấn học vụ đã được đặt thành công! Dưới đây là thông tin chi tiết về lịch hẹn:\n\n* **Mã đặt lịch (Booking ID):** BK-SV2026001-99\n* **Sinh viên:** Nguyễn Văn An (Mã SV: SV2026001)\n* **Cố vấn học tập:** PGS.TS Nguyễn Văn A\n* **Thời gian:** 14:00 ngày 15/09/2026\n\nBạn vui lòng kiểm tra email sinh viên (`an.nv@vinuni.edu.vn`) để cập nhật thêm chi tiết hoặc thông báo nhắc nhở từ hệ thống. Nếu cần hỗ trợ thêm, bạn đừng ngần ngại phản hồi nhé!",
+    "latency_ms": 5576.47
   }
 ]
 ```
